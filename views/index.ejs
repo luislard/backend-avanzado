@@ -1,0 +1,35 @@
+<% include header %>
+
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100">
+          
+          <div class="col-lg-7 my-auto">
+            <div class="header-content mx-auto">
+    
+        <h1><%= title %></h1>
+        <p>Welcome to <%= title %></p>
+
+        <%= valor %> <!-- si pusieramos un - en vez del = se ejecutaría el alert -->
+
+        <% if (condicion.estado) { %>
+          <p><%= condicion.segundo %> es par </p>
+        <% } else { %>
+          <p><%= condicion.segundo %> es impar </p>
+        <% } %>
+
+        <% users.forEach(function(user) { %>
+          <p><%= user.name + ' ' + user.age %></p>
+        <% }) %>
+
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+
+
+    
+
+<% include footer %>
